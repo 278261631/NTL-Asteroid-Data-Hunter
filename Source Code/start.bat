@@ -26,4 +26,4 @@ if exist "%applicationpath%\jre\bin\java.exe" (
 echo JAVA_HOME=%JAVA_HOME%
 echo warurl=%warurl%
 echo applicationpath=%applicationpath%
-"%JAVA_HOME%\bin\java" -classpath "%fulldir%\run-jetty-1.0\lib\*" -Xms256m -Xmx2048m -XX:PermSize=128m -XX:MaxPermSize=2048m gov.nasa.asteroid.hunter.AsteroidHunterApplication "%warurl%" "%datadir%" "%fulldir%\detector\detector.exe"
+"%JAVA_HOME%\bin\java" -classpath "%fulldir%\run-jetty-1.0\lib\*" -Xms256m -Xmx1G -XX:PermSize=128m -XX:MaxPermSize=2048m gov.nasa.asteroid.hunter.AsteroidHunterApplication "%warurl%" "%datadir%" "%fulldir%\detector\detector.exe"
